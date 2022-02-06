@@ -5,11 +5,17 @@ document.addEventListener('mouseup', () => mouseClicked = false);
 const button = document.querySelector("#btnGrid");
 button.addEventListener('click', initGrid);
 
+const slider = document.querySelector('.slider');
+const sliderNumber = document.querySelector('.slider-number');
+
+sliderNumber.textContent = slider.value;
+slider.oninput = () => sliderNumber.textContent = slider.value;
+
 let mouseClicked = false;
 
 function initGrid(){
     container.innerHTML = '';
-    let size = prompt("Please enter the desired size of the grid");
+    let size = slider.value;
     //TODO set size limit to 100;
     for(let row = 0; row < size; row++){
         const rowDiv = document.createElement('div');

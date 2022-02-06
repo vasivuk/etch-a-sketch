@@ -16,8 +16,10 @@ body {
     align-self: stretch;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #999;
+    gap: 20px;
 }
 
 .header button {
