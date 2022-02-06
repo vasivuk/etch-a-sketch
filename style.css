@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    
 }
 
 .row {
@@ -48,10 +47,15 @@ body {
 }
 .square {
     flex: 1;
+    background-color: white;
 }
 
 .square:hover {
     background-color: rgb(197, 197, 197);
+}
+
+.blackInk {
+    background-color: black;
 }
 
 /* FOOTER */
