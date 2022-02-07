@@ -30,6 +30,8 @@ body {
     background-color: var(--cream);
 }
 
+/* HEADER SECTION */
+
 .header {
     align-self: stretch;
     display: flex;
@@ -41,19 +43,18 @@ body {
     /* box-shadow: var(--dark-green) 0px 5px 15px; */
 }
 
-.header button {
-    border-style: none;
-    font-size: 24px;
-    border-radius: 40px;
-    padding: 20px 40px;
-    cursor: pointer;
-    background-color: var(--cream);
-    color: var(--green)
+.header h1 {
+    color: var(--white-text);
+    font-size: 52px;
 }
 
-.header button:hover {
-    background-color: var(--dark-green);
-    color: var(--white-text);
+/* MAIN SECTION */
+
+.main-section {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-evenly;
 }
 
 .grid-container {
@@ -64,28 +65,38 @@ body {
     border: 2px solid var(--grid-container);
     background-color: var(--grid-lines);
     margin: 20px;
+    flex-shrink: 0;
 }
 
-.row {
+/* OPTIONS SECTION*/
+.options {
+    width: 200px;
+    align-self: stretch;
+    height: 500px;
+    margin: 20px;
+    background-color: var(--green);
+    flex-shrink: 0;
     display: flex;
-    flex: 1;
-    align-items: stretch;
+    flex-direction: column;
     justify-content: center;
-}
-.square {
-    flex: 1;
-    background-color: var(--square);
-    margin: 0.5px;
-    border-radius: 4px;
+    align-items: stretch;
+    gap: 10px;
+    padding: 15px;
 }
 
-.square:hover {
-    background-color: rgb(170, 165, 245);
+button {
+    border-style: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: var(--cream);
+    color: var(--green)
 }
 
-.blackInk {
-    transition: ease 0.2s;
-    background-color: var(--dark-blue);
+button:hover {
+    background-color: var(--dark-green);
+    color: var(--white-text);
 }
 
 .slider {
@@ -112,6 +123,32 @@ body {
 .slider-number {
     color: var(--white-text);
     font-size: 20px;
+}
+
+.options#hidden {
+    visibility: hidden;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    justify-content: center;
+}
+.square {
+    flex: 1;
+    background-color: var(--square);
+    margin: 0.5px;
+    border-radius: 4px;
+}
+
+.square:hover {
+    background-color: rgb(170, 165, 245);
+}
+
+.blackInk {
+    transition: ease 0.2s;
+    background-color: var(--dark-blue);
 }
 
 /* FOOTER */
