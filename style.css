@@ -2,20 +2,27 @@
 
 
 :root {
-    --red: #c56843;
     --white-text: #e0d4b4;
-    --cream-1: #e0d994;
+
+    --red: #c55243;
     --orange: #dda361;
-    --dark-blue: #363488;
+    --yellow : #e6d862;
+
+    --dark-blue: #4745af;
+    --light-blue: #3a94af;
+    --dark-green: #1e6132;
+
+    --purple: #894fb1;
+    --pink: #e487c0;
+    --beige: #d3c6a1;
+
+    --brown: #725338;
+    --gray: #777777;
+    --black: #363636;
 
     --green: #37915c;
-    --dark-green: #1e6132;
     --darker-green: #144422;
     --cream: #e7e0b6;
-
-    --yellow : #ebdc58;
-    --purple: #9f56b1;
-    --pink: #da89bb;
 
     --grid-container: #918855;
     --grid-lines: #c4be88;
@@ -78,8 +85,8 @@ body {
 /* OPTIONS SECTION*/
 .options {
     width: 200px;
+    height: 600px;
     align-self: stretch;
-    height: 500px;
     margin: 20px 0px;
     background-color: var(--green);
     border-bottom-right-radius: 20px;
@@ -213,6 +220,10 @@ hr {
     background-color: var(--dark-blue);
 }
 
+#light-blue {
+    background-color: var(--light-blue);
+}
+
 #green {
     background-color: var(--green);
 }
@@ -231,6 +242,26 @@ hr {
 
 #pink {
     background-color: var(--pink);
+}
+
+#brown {
+    background-color: var(--brown);
+}
+
+#black {
+    background-color: var(--black);
+}
+
+#orange {
+    background-color: var(--orange);
+}
+
+#beige {
+    background-color: var(--beige);
+}
+
+#gray {
+    background-color: var(--gray);
 }
 
 #eraser {
