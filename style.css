@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 :root {
     --red: #c56843;
     --white-text: #e0d4b4;
@@ -18,12 +21,9 @@
     --grid-lines: #c4be88;
     --square: #f5e7c5;
 }
-@font-face {
-    font-family: dejaVuWindows;
-    src: url(DejaVuSansMono.ttf);
-  }
+
 *{
-    font-family: arcade, 'DejaVu Sans Mono', dejaVuWindows, Courier, monospace;
+    font-family: 'Open Sans', Courier, monospace;
     margin: 0;
     padding: 0;
 }
