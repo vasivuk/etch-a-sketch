@@ -11,7 +11,21 @@ const sliderNumber = document.querySelector('.slider-number');
 sliderNumber.textContent = slider.value;
 slider.oninput = () => sliderNumber.textContent = slider.value;
 
+const colors = document.querySelectorAll('input.color');
+
+for(const color of colors){
+    color.addEventListener('click', () => {
+        for (const color of colors) {
+            if(color.checked) {
+                selectedColor = color.value;
+                break;
+            }
+        }
+    })
+}
+
 let mouseClicked = false;
+let selectedColor = 'blue';
 
 function initGrid(){
     container.innerHTML = '';
@@ -27,31 +41,17 @@ function initGrid(){
             rowDiv.appendChild(div);
             div.addEventListener('mouseover', () => {
                 if(mouseClicked){
-                    div.classList.add('blackInk');
+                    div.id = selectedColor;
+                    div.classList.add('transition');
                 }
+            });
+            div.addEventListener('click', () => {
+                div.id = selectedColor;
+                div.classList.add('transition');      
             });
         }
     }
 }
 
-for(let row = 0; row < 16; row++){
-    const rowDiv = document.createElement('div');
-    rowDiv.classList.add("row");
-    container.appendChild(rowDiv);
-    for(let col = 0; col < 16; col++){
-        const div = document.createElement('div');
-        div.classList.add('square');
-        rowDiv.appendChild(div);
-        div.addEventListener('mouseout', () => {
-            if(mouseClicked){
-                div.classList.add('blackInk');
-            }        
-        });
-        div.addEventListener('click', () => {
-            if(mouseClicked){
-                div.classList.add('blackInk');
-            }        
-        });
-    }
-}
+initGrid();
 

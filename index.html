@@ -12,19 +12,28 @@
         <h1>Etch-a-sketch!</h1>
     </div>
     <div class="main-section">
+        
         <div class="options">
             <div class="slidecontainer">
                 <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
                 <div class="slider-number"></div>
               </div>
             <button id="btnGrid">Change grid size</button>
+            <div class="color-picker">
+                <input type="radio"
+                class="color" id="blue" name="colors" value="blue" checked>
+                <input type="radio" class="color" id="red" name="colors" value="red">
+                <input type="radio" class="color" id="green" name="colors" value="green">
+                <input type="radio" class="color" id="yellow" name="colors" value="yellow">
+                <input type="radio" class="color" id="purple" name="colors" value="purple">
+                <input type="radio" class="color" id="pink" name="colors" value="pink">
+            </div>
         </div>
+        
         <div class="grid-container">
-
+            <!-- Squares are in javascript -->
         </div>
-        <div class="options" id="hidden">
-            
-        </div>
+        <div class="options" id="hidden"></div>
     </div>
     <div class="footer">Made by vasivuk</div>
     <script src="script.js"></script>
