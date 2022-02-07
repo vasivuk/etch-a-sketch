@@ -18,9 +18,12 @@
     --grid-lines: #c4be88;
     --square: #f5e7c5;
 }
-
+@font-face {
+    font-family: dejaVuWindows;
+    src: url(DejaVuSansMono.ttf);
+  }
 *{
-    font-family: 'DejaVu Sans Mono', Courier, monospace;
+    font-family: arcade, 'DejaVu Sans Mono', dejaVuWindows, Courier, monospace;
     margin: 0;
     padding: 0;
 }
