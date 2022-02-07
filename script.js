@@ -2,11 +2,10 @@ const container = document.querySelector('.grid-container');
 document.addEventListener('mousedown', () => mouseClicked = true);
 document.addEventListener('mouseup', () => mouseClicked = false);
 
-const button = document.querySelector("#btnGrid");
-button.addEventListener('click', initGrid);
-
 const slider = document.querySelector('.slider');
 const sliderNumber = document.querySelector('.slider-number');
+
+slider.addEventListener('mouseup', initGrid);
 
 sliderNumber.textContent = slider.value;
 slider.oninput = () => sliderNumber.textContent = slider.value;
