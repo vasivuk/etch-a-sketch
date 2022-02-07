@@ -143,6 +143,21 @@ button:hover {
     font-size: 20px;
 }
 
+.eraser-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+hr {
+    align-self: stretch;
+    color: var(--purple);
+    border: 1px solid #26814c;
+    border-radius: 1px;
+    
+}
+
 .colors-container {
     display: flex;
     flex-direction: column;
@@ -210,6 +225,10 @@ button:hover {
 
 #pink {
     background-color: var(--pink);
+}
+
+#eraser {
+    background-color: var(--square);
 }
 
 .square:hover {
