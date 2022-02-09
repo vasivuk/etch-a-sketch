@@ -25,7 +25,7 @@
     --cream: #e7e0b6;
 
     --grid-container: #918855;
-    --grid-lines: #c4be88;
+    --grid-lines: #cac592;
     --square: #f5e7c5;
 }
 
@@ -213,7 +213,7 @@ hr {
     flex: 1;
     background-color: var(--square);
     margin: 0.5px;
-    border-radius: 4px;
+    /* border-radius: 10%; */
 }
 
 #blue {
@@ -285,5 +285,9 @@ hr {
     background-color: var(--green);
     align-self: stretch;
     color: var(--cream);
+    /* width: 300px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    justify-content: center; */
     /* box-shadow: var(--dark-green) 0px -5px 15px; */
 }
